@@ -18,10 +18,9 @@ const OnboardingItem: React.FC<OnboardingItemProps> = ({
         source={item.image}
         style={[styles.image, { resizeMode: "contain" }]}
       />
-      <View style={{ flex: 0.3 }}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.description}</Text>
-      </View>
+
+      <Text style={styles.title}>{item.title}</Text>
+      <Text style={styles.description}>{item.description}</Text>
     </View>
   );
 };
@@ -35,10 +34,9 @@ const styles = StyleSheet.create({
 
   image: {
     justifyContent: "center",
-    width: 350,
-    height: 350,
-    position: "absolute",
-    top: 0,
+    height: 200,
+    marginTop: 65,
+    marginBottom: 60,
   },
 
   title: {
@@ -46,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     lineHeight: 42,
     fontStyle: "normal",
-    marginTop: 68,
+    fontFamily: "Inter",
     marginBottom: 8,
     color: "#262626",
     textAlign: "center",
@@ -57,8 +55,9 @@ const styles = StyleSheet.create({
     fontSize: 17,
     lineHeight: 25,
     fontStyle: "normal",
-    marginBottom: 25,
+    fontFamily: "Inter",
     marginHorizontal: 48,
+    marginBottom: 8,
     color: "#A6A6A6",
     textAlign: "center",
   },

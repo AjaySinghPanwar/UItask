@@ -1,3 +1,5 @@
+import { JSXElementConstructor, ReactElement } from "react";
+
 export type OnboardingItemProps = {
   item: {
     key: Number;
@@ -13,6 +15,13 @@ export type SliderDataProps = {
     image: any;
     title: String;
     description: String;
-  }[],
+  }[];
   scrollX: any;
+};
+
+export type ButtonElementProps = {
+  title:
+    | string
+    | ReactElement<{}, string | JSXElementConstructor<any>>
+  | undefined;
 };

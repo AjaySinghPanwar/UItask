@@ -42,10 +42,9 @@ const Paginator: React.FC<SliderDataProps> = ({
 
 const styles = StyleSheet.create({
   container: {
+    flex: 2,
     flexDirection: "row",
     justifyContent: "space-between",
-    position: "absolute",
-    top: 500,
     width: 56,
     height: 16,
   },
