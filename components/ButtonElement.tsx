@@ -4,6 +4,7 @@ import { ButtonElementProps } from "../types/types";
 
 const ButtonElement: React.FC<ButtonElementProps> = ({
   title,
+  onPress,
 }: ButtonElementProps) => {
   return (
     <View style={{ flex: 3 }}>
@@ -21,7 +22,7 @@ const ButtonElement: React.FC<ButtonElementProps> = ({
           height: 58,
           borderRadius: 12,
         }}
-        onPress={() => console.log("I am clicked")}
+        onPress={() => onPress()}
       />
     </View>
   );

@@ -1,4 +1,5 @@
-import { JSXElementConstructor, ReactElement } from "react";
+import React, { JSXElementConstructor, ReactElement } from "react";
+import { GestureResponderEvent } from "react-native";
 
 export type OnboardingItemProps = {
   item: {
@@ -23,5 +24,6 @@ export type ButtonElementProps = {
   title:
     | string
     | ReactElement<{}, string | JSXElementConstructor<any>>
-  | undefined;
+    | undefined;
+  onPress: () => void;
 };
