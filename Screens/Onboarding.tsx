@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
 import { Animated, ScrollView, StyleSheet, View } from "react-native";
 import { slides } from "../util/data";
-import ButtonElement from "../components/ButtonElement";
-import OnboardingItem from "../components/OnboardingItem";
-import Paginator from "../components/Paginator";
+import ButtonElement from "../Components/ButtonElement";
+import OnboardingItem from "../Components/OnboardingItem";
+import Paginator from "../Components/Paginator";
 
 const Onboarding: React.FC = () => {
   const scrollX = useRef(new Animated.Value(0)).current;

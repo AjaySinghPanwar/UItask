@@ -1,5 +1,5 @@
 import { Image, StyleSheet, View } from "react-native";
-import Onboarding from "./Screens/Onboarding";
+import Onboarding from "./Components/Onboarding";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 
